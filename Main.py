@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Thu Oct 15 21:28:18 2020
 
-@author: Clayton
-"""
 import wget
 
 print('Beginning file download with requests')
@@ -26,4 +22,3 @@ for i in range(10000):
     url = raw[0:numberPart + 4] + str(count) + raw[afterNumberPart:len(raw)]
     filename = 'C:\\Users\\Clayton\\Downloads\\LectureVideo\\' + str(count) + '.ts'
     wget.download(url, filename)
-    
